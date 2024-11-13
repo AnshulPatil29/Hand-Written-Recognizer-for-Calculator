@@ -22,6 +22,7 @@ This project uses a Regularized CNN built using pytorch and trained on https://w
 ### Prerequisites
 - Python 3.x
 - python libraries listed in requirements.txt
+- **Options** CUDA 11.8 was used to train this on a RTX 3060 GPU otherwise pytorch would not detect the GPU
 
 ### Steps to Install
 1. Clone the repository:
@@ -33,7 +34,7 @@ This project uses a Regularized CNN built using pytorch and trained on https://w
     ```bash
     pip install -r requirements.txt
     ```
-    
+> Side note: The Ignore folder contains the example image in this readme, that can be deleted.
 ---
 
 ## Usage
