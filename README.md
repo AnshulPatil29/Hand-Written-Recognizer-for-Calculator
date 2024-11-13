@@ -49,9 +49,8 @@ python app.py
 ```
 It will give an output command similar to this
 ```bash
-streamlit run ..path_to_folder\7_Real-Time-Hand-Written-Recognizer-for-Calculator\app.py
+streamlit run app.py
 ```
-**Run that command, not the one shown above**  
 This should open the app on your default browser 
 
 ---
