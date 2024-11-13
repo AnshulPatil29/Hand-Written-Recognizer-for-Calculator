@@ -47,7 +47,7 @@ Run the app file
 ```bash
 python app.py
 ```
-It will give an output command similar to this
+Then run the command it gives you, should be this one
 ```bash
 streamlit run app.py
 ```
