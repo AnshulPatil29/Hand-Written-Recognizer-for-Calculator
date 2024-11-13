@@ -79,10 +79,21 @@ A **regularized CNN model** was trained for 10 epochs to prevent overfitting, wh
 The exclusion of the division and equal-to symbols, along with other specific preprocessing techniques, contributed to these results.
 
 ## future-work-and-shortcomings
-### shortcomings
-As mentioned in training, this model cannot predict division symbol, decimal symbol and equal to symbol. A fix has been applied for = symbol though, since the segmentation process yeilds 2 horizontal lines which are predicted as - and - by the model, if 2 - occur at end of the equation, it is assumed to be an =
-The decimal was excluded purely by accident as the random equation generator solely generated integers. 
-The model also requires some preprocessing to work on equations written on paper to deal with occlusion and gradients created by shadows. This can be dealt with by using adaptive histogram equalization and then using the minima of the histogram to threshold.
+### Model Shortcomings
+
+As noted during the training process, this model has the following limitations:
+
+1. **Inability to Predict Certain Symbols**:
+   - The model cannot predict the division symbol (‘/’) and the decimal symbol (‘.’).
+   - Although a fix has been applied for the equal symbol (‘=’), it is important to understand how it functions. During segmentation, the ‘=’ symbol is often misinterpreted as two horizontal lines, leading the model to predict them as two consecutive minus symbols (‘-’). To correct this, if the model identifies two consecutive ‘-’ at the end of an equation, they are assumed to represent an ‘=’.
+
+2. **Limited Training Data**:
+   - The model's training data consisted solely of integers, resulting in the exclusion of the decimal symbol by accident. Though, this issue can be fixed fairly easily.
+
+3. **Preprocessing Requirements**:
+   - The model requires preprocessing to effectively work on equations written on paper. This is necessary to manage occlusion and shadows that create gradients.
+   - Adaptive histogram equalization can be used to address this, followed by applying the minima of the histogram to threshold the image.
+
 ### future work
 * add support for decimal symbol
 * add option to upload image of equation written on plain paper
