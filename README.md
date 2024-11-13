@@ -14,7 +14,6 @@ This project uses a Regularized CNN built using pytorch and trained on https://w
 - [Usage](#usage)
 - [How the model was trained](#Training)
 - [Future Work and Shortcomings](#future-work-and-shortcomings)
-- [License](#license)
 
 ---
 
@@ -44,7 +43,18 @@ Run the app file
 ```bash
 python app.py
 ```
+It will give an output command similar to this
+```bash
+streamlit run ..path_to_folder\7_Real-Time-Hand-Written-Recognizer-for-Calculator\app.py
+```
+**Run that command, not the one shown above**  
+This should open the app on your default browser 
+
+---
+
 ### Example output
+![UI output of app](Image/example.png)
+
 
 ## Training
 
