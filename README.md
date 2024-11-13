@@ -53,7 +53,7 @@ This should open the app on your default browser
 ---
 
 ### Example output
-![UI output of app](Image/example.png)
+![UI output of app](Ignore/example.png)
 
 
 ## Training
