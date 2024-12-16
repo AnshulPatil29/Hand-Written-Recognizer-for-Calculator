@@ -27,7 +27,7 @@ This project uses a Regularized CNN built using pytorch and trained on https://w
 ### Steps to Install
 1. Clone the repository:
     ```bash
-    git clone https://github.com/AnshulPatil29/7_Real-Time-Hand-Written-Recognizer-for-Calculator.git
+    git clone https://github.com/AnshulPatil29/Hand-Written-Recognizer-for-Calculator.git
     ```
 2. Navigate to the repository:
     ```bash
